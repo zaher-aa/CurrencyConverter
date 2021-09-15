@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- OG tags -->
+    <meta property="og:title" content="Currency Converter" />
+    <meta property="og:image" content="./images/logo.png" />
+    <meta property="og:description" content="Simple Currency Converter App." />
+    <meta
+      property="og:description"
+      content="https://zaher-aa.github.io/CurrencyConverter"
+    />
+    <meta property="og:image:width" content="511.99" />
+    <meta property="og:image:height" content="511.99" />
+    <meta property="og:image:type" content="website" />
+    <!-- Shortcut Icon -->
+    <link rel="shortcut icon" href="./images/logo.png" />
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="./style/all.min.css" />
+    <!-- Normalize File -->
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <section class="workspace">
+      <header><h1>Currency Converter</h1></header>
+      <main>
+        <div class="currency active">
+          <img src="./images/Flag_of_Palestine.svg" alt="Flag_of_Palestine" />
+          <div class="symbol">₪</div>
+          <div class="input-field-parent">
+            <input type="number" min="0" data-cur="ps" / placeholder="0.0000">
+            <p class="name">PS - PS Pound</p>
+            <p class="exchange" data-cur="ps">1 PS = 1 PS</p>
+          </div>
+        </div>
+        <div class="currency">
+          <img src="./images/Flag_of_Egypt.svg" alt="Flag_of_Egypt" />
+          <div class="symbol">E£</div>
+          <div class="input-field-parent">
+            <input type="number" min="0" data-cur="egp" placeholder="0.0000" />
+            <p class="name">EGP - Egyption Pound</p>
+            <p class="exchange" data-cur="egp">1 PS = 4.89 EGP</p>
+          </div>
+        </div>
+        <div class="currency">
+          <img
+            src="./images/Flag_of_the_United_States.svg"
+            alt="Flag_of_the_United_States"
+          />
+          <div class="symbol">$</div>
+          <div class="input-field-parent">
+            <input type="number" min="0" data-cur="usd" placeholder="0.0000" />
+            <p class="name">USD - US Dollar</p>
+            <p class="exchange" data-cur="usd">1 PS = 0.31 USD</p>
+          </div>
+        </div>
+        <div class="currency">
+          <img src="./images/Flag_of_Europe.svg" alt="Flag_of_Europe" />
+          <div class="symbol">€</div>
+          <div class="input-field-parent">
+            <input type="number" min="0" data-cur="eur" placeholder="0.0000" />
+            <p class="name">EUR - Eruo</p>
+            <p class="exchange" data-cur="eur">1 PS = 0.26 EUR</p>
+          </div>
+        </div>
+        <div class="currency">
+          <img src="./images/Flag_of_Algeria.svg" alt="Flag_of_Algeria" />
+          <div class="symbol">DZD</div>
+          <div class="input-field-parent">
+            <input type="number" min="0" data-cur="dzd" placeholder="0.0000" />
+            <p class="name">DZD - Algerian Dinar</p>
+            <p class="exchange" data-cur="dzd">1 PS = 42.38 DZD</p>
+          </div>
+        </div>
+        <div class="currency">
+          <img
+            src="./images/Flag_of_Saudi_Arabia.svg"
+            alt="Flag_of_Saudi_Arabia"
+          />
+          <div class="symbol">SAR</div>
+          <div class="input-field-parent">
+            <input type="number" min="0" data-cur="sar" placeholder="0.0000" />
+            <p class="name">SAR - Saudi Riyal</p>
+            <p class="exchange" data-cur="sar">1 PS = 1.17 SAR</p>
+          </div>
+        </div>
+      </main>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>

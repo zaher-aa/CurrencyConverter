@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #525463;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+img {
+  width: 50px;
+  height: 30px;
+  object-fit: cover;
+  border: 1px solid rgb(255 255 255 / 0.5);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.workspace {
+  width: 370px;
+  background-color: #1c1a1c;
+  color: white;
+  height: max(500px, 95vh);
+}
+
+main {
+  height: calc(100% - 73.01px);
+  overflow: auto;
+  padding: 20px;
+}
+
+main::-webkit-scrollbar {
+  width: 1vw;
+}
+
+main::-webkit-scrollbar-track {
+  background-color: #244c7663;
+}
+
+main::-webkit-scrollbar-thumb {
+  background-color: #333;
+}
+
+h1 {
+  background-color: #2d2d39;
+  font-size: 1.8rem;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+.currency {
+  display: flex;
+  background-color: #2d2d39;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.currency.active {
+  background-color: #244b76;
+}
+
+.symbol {
+  width: 50px;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 1.1rem;
+}
+
+.input-field-parent input {
+  background-color: #2d2d39;
+  outline: none;
+  border: 2px solid rgb(255 255 255 / 0.7);
+  padding: 5px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  appearance: none;
+  color: rgb(255 255 255 / 0.9);
+  width: 170px;
+  -moz-appearance: textfield;
+}
+
+.currency.active input {
+  background-color: #244b76;
+}
+
+.input-field-parent .name {
+  margin: 3px 0;
+  margin-top: 7px;
+}
+
+.input-field-parent .exchange {
+  font-weight: 200;
+  font-size: 0.9rem;
+  margin-top: 7px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
